@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sunrise Animation</title>
+   <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<script src=constants.js></script>
+<script src=script.js></script>
+<script src=index.js></script>
+
+<body>
+   <div class="container">
+      <div class="title-container">
+         <h1>Sunrise</h1>
+         <div class="description">
+            <p>Project Description: This shader script creates a realistic sunrise, transitioning smoothly from night to
+               dawn.</p>
+            <p><strong>Key Features:</strong> Delayed start, fade-in effects, vertical ascent, color transitions, and
+               atmospheric effects.</p>
+         </div>
+      </div>
+
+      <div class="main-container">
+         <div class="left-container">
+            <div id="blank-block"></div>
+            <canvas id="canvas1" width="500" height="500"></canvas>
+         </div>
+         <div class="right-container">
+            <div class="editor-container">
+               <div class="error-container">
+                  <div id="error-message">&nbsp;</div>
+                  <div id="error-marker">&nbsp;</div>
+               </div>
+               <textarea id="text-editor" spellcheck="false"></textarea>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
