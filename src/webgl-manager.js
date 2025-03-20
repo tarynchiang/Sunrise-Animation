@@ -118,6 +118,10 @@ class WebGLManager {
       this.gl[functionName](loc, ...values);
    }
 
+   startGL(vertexShader, fragmentShader) {
+      this.setShaders(vertexShader, fragmentShader);
+   }
+
    animate() {
       if (!this.isProgramReady) return;
       if (this.startTime === undefined)

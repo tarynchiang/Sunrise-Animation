@@ -7,19 +7,30 @@
    <title>Sunrise Animation</title>
    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<script src=constants.js></script>
-<script src=webgl-manager.js></script>
-<script src=main.js></script>
 
 <body>
    <div class="container">
       <div class="title-container">
-         <h1>Sunrise</h1>
+         <h1>Sunrise Animation</h1>
          <div class="description">
-            <p>Project Description: This shader script creates a realistic sunrise, transitioning smoothly from night to
-               dawn.</p>
-            <p><strong>Key Features:</strong> Delayed start, fade-in effects, vertical ascent, color transitions, and
-               atmospheric effects.</p>
+            <p>Project Description: This interactive WebGL application simulates a realistic sunrise, transitioning
+               smoothly from night to dawn. Users can interact directly with the shader's parameters through an embedded
+               text editor, making real-time adjustments to the animation's effects.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+               <li><strong>Interactive Text Editor:</strong> Adjust shader code in real-time to see immediate changes in
+                  the animation.</li>
+               <li><strong>Delayed Start:</strong> The sunrise does not begin immediately, mimicking the gradual
+                  approach of dawn.</li>
+               <li><strong>Fade-In Effects:</strong> The sunrise gradually brightens, simulating the natural increase in
+                  light at dawn.</li>
+               <li><strong>Vertical Ascent:</strong> The sun visually ascends over the horizon, enhancing the realism of
+                  the sunrise.</li>
+               <li><strong>Color Transitions:</strong> The background dynamically changes from the dark hues of night to
+                  the warm tones of sunrise and into the brighter blues of day.</li>
+               <li><strong>Atmospheric Effects:</strong> Simulates atmospheric scattering to add depth and realism to
+                  the sunrise.</li>
+            </ul>
          </div>
       </div>
 
@@ -40,5 +51,10 @@
       </div>
    </div>
 </body>
+
+<script src="src/shaders.js"></script>
+<script src="src/webgl-manager.js"></script>
+<script src="src/textarea-handler.js"></script>
+<script src="src/main.js"></script>
 
 </html>
