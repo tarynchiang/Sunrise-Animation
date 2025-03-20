@@ -11,12 +11,14 @@ body {
 
   .description {
     font-size: large;
+    width: 70%;
   }
 }
 
 .main-container {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+  margin: 0 40px;
 
   .left-container,
   .right-container {
